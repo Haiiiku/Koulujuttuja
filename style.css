@@ -9,40 +9,51 @@ html, body {
   min-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
+  height: 1000px;
 }
 
 #form_section {
+ display: block;
  /*border: 1px solid #000;*/
  width: 80%;
+ height: 175px;
  margin-left: auto;
  margin-right: auto;
+ margin-top: 150px;
 }
 
-#inputs {
-  width: 100%;
-}
 
-#inputs input {
+
+#form_section input[name=eka] {
   display: block;
-  width: 200px;
-  height: 30px;
-  box-sizing: border-box;
-  padding: 0;
-}
-
-#inputs input[name=eka] {
   float: left;
-  width: 30%;
+  box-sizing: border-box;
+  width: 64%;
+  height: 30px;
 }
 
-#inputs input[name=toka] {
-  width: 67%;
+#form_section input[name=toka] {
+  display: block;
+  box-sizing: border-box;
+  width: 34%;
   float: right;
+  height: 30px;
 }
 
-#form_section textarea {
-  margin-top: 15px;
-  height: 150px;
+#form_section input[name=main_text] {
+  display: block;
+  float: right;
   width: 100%;
-  padding: 0;
+  height: 100px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+#form_section button {
+  display: block;
+  float: right;
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
 }
