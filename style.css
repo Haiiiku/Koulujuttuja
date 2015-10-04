@@ -1,11 +1,11 @@
-html, body, p {
+html, body {
   margin: 0;
   padding: 0;
 }
 
 html {
   background-image: url(assets/pics/upfeathers.png);
-  background-size: auto;
+  background-size: contain;
   background-repeat: repeat;
 }
 
@@ -35,7 +35,7 @@ h1#header_header {
   position: relative;
   left: 5%;
   top: 18px;
-  width: 700px;
+  width: 500px;
 }
 
 #form_section {
@@ -50,28 +50,7 @@ h1#header_header {
 
 }
 
-#form_section input[type=text] {
-  background-color: rgb(255,255,255);
-  border: 0px;
-}
 
-#form_section select {
-  margin-left: 15px;
-  margin-top: 0px;
-}
-
-#form_section input[value=Submit] {
-  display: block;
-  position: relative;
-  top: 10px;
-  background-color: rgb(255,255,255);
-  border: 0px;
-  padding: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  box-sizing: border-box;
-  float: right;
-}
 
 #form_section input[name=eka] {
   display: block;
@@ -104,32 +83,4 @@ h1#header_header {
   width: 100px;
   height: 25px;
   margin-top: 10px;
-}
-
-ul#nc {
-  display:block;
-  position:relative;
-  top: 200px;
-  width: 80%;
-  background: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  padding: 40px;
-  padding-top: 15px;
-  margin: 0;
-  display: block;
-}
-
-ul li h1 {
-  margin: 0;
-}
-
-ul li p {
-  padding-top:30px;
-  padding-left:30px;
 }

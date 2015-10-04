@@ -30,19 +30,9 @@ function CreateNote(data) {
   description.innerText = data[1];
   noteDisplay.appendChild(title);
   noteDisplay.appendChild(description);
-<<<<<<< HEAD
-  /*  noteDisplay.style.background="gray";
-  noteDisplay.style.color="white";
-  noteDisplay.style.width = "50px;";
-  noteDisplay.style.height = "50px;"; */
-  document.getElementById("nc").insertBefore(noteDisplay, document.getElementById("nc").childNodes[0]);
   console.log("Tried to create div");
-}
-=======
   noteDisplay.style.background = data[2];
   noteDisplay.style.opacity = 1;
->>>>>>> origin/master
-
   FadeIn(noteDisplay);
   //Listauksien "poisto" toiminto
   noteDisplay.addEventListener("click", function(event){
