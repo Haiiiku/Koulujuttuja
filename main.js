@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 });
 //Pikku muuttuuja fade funktioille
-var fadeSpd = 0.05;
-
+var fadeAmount = 0.05; // Kuinka paljon opacity muuttuu per tick?
+var fadeTick = 40; //Tick nopeus
 function Submit() {
   if(title.value == "" | desc.value == "") {
     var emptyFields = "";
@@ -47,23 +47,23 @@ function CreateNote(data) {
 function FadeIn(element) {
   var opacity = 0;
   var interval2 = setInterval(function(){
-    opacity += fadeSpd;
+    opacity += fadeAmount;
     element.style.opacity = opacity; // Käytän apumuuttujaa opacity koska jos yritän suoraan suurentaa element.style.opacity += 0.05 niin se ei toimi.
     if(element.style.opacity >= 1) {
       console.log("finished");
       clearInterval(interval2);
     }
-  }, 40);
+  }, fadeTick);
 }
 
 function FadeOut(element) {
   var interval = setInterval(function(){
-    element.style.opacity -= fadeSpd;
+    element.style.opacity -= fadeAmount;
     if (element.style.opacity <= 0) {
       element.style.display = "none";
       document.getElementById(element);
       element.parentNode.removeChild(element)
       clearInterval(interval);
     }
-  }, 40);
+  }, fadeTick);
 }
