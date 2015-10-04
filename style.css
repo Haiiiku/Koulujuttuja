@@ -5,7 +5,7 @@ html, body {
 
 html {
   background-image: url(assets/pics/upfeathers.png);
-  background-size: contain;
+  background-size: auto;
   background-repeat: repeat;
 }
 
@@ -68,6 +68,17 @@ h1#header_header {
   height: 30px;
 }
 
+#form_section input[type=button] {
+  display: block;
+  position: relative;
+  float: right;
+  top: 10px;
+  border: none;
+  background: #fff;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
 #form_section input[name=main_text] {
   display: block;
   float: right;
@@ -76,6 +87,13 @@ h1#header_header {
   box-sizing: border-box;
   margin-top: 10px;
 }
+#form_section select {
+  border: 0;
+  position: relative;
+  padding-top: 7px;
+  padding-bottom:7px;
+  margin-left: 40px;
+}
 
 #form_section button {
   display: block;
@@ -83,4 +101,31 @@ h1#header_header {
   width: 100px;
   height: 25px;
   margin-top: 10px;
+}
+
+ul#nc {
+  list-style: none;
+  display: block;
+  position: relative;
+  top: 100px;
+}
+
+ul li {
+  margin-top: 40px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+ul li:hover {
+  transition: 1s;
+  border: 2px solid #000;
+  -webkit-box-shadow: inset 0px 0px 24px -6px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    inset 0px 0px 24px -6px rgba(50, 50, 50, 0.75);
+box-shadow:         inset 0px 0px 24px -6px rgba(50, 50, 50, 0.75);
+  overflow: hidden;
+  cursor:pointer;
+}
+
+ul li p {
+  padding-left: 20px;
 }
