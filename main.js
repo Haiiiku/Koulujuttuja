@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var desc = document.getElementById("desc");
   var color = document.getElementById("colortag");
   var noteHolder = document.getElementById("nc");
-
-
 });
-//Pikku muuttuuja fade funktioille
+
+//Pikku muuttuujia fade funktioille
 var fadeAmount = 0.05; // Kuinka paljon opacity muuttuu per tick?
 var fadeTick = 40; //Tick nopeus
+
 function Submit() {
   if(title.value == "" | desc.value == "") {
     var emptyFields = "";
@@ -31,7 +31,7 @@ function CreateNote(data) {
   noteDisplay.appendChild(title);
   noteDisplay.appendChild(description);
   noteDisplay.style.background = data[2];
-  noteDisplay.style.opacity = 0;
+  noteDisplay.style.opacity = 1;
 
   FadeIn(noteDisplay);
   //Listauksien "poisto" toiminto
@@ -45,12 +45,12 @@ function CreateNote(data) {
 }
 
 function FadeIn(element) {
+  element.style.opacity = 0;
   var opacity = 0;
   var interval2 = setInterval(function(){
     opacity += fadeAmount;
     element.style.opacity = opacity; // Käytän apumuuttujaa opacity koska jos yritän suoraan suurentaa element.style.opacity += 0.05 niin se ei toimi.
     if(element.style.opacity >= 1) {
-      console.log("finished");
       clearInterval(interval2);
     }
   }, fadeTick);
