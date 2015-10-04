@@ -3,10 +3,10 @@ html, body {
   padding: 0;
 }
 
-body {
-  background-image: url(assets/pics/yellow-metal-design-decoration.jpg);
+html {
+  background-image: url(assets/pics/upfeathers.png);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 #wrapper {
@@ -15,7 +15,6 @@ body {
   min-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  height: 560px;
 }
 
 header {
@@ -36,16 +35,19 @@ h1#header_header {
   position: relative;
   left: 5%;
   top: 18px;
+  width: 500px;
 }
 
 #form_section {
  display: block;
  /*border: 1px solid #000;*/
  width: 80%;
+ position: relative;
+ top: 100px;
  height: 175px;
  margin-left: auto;
  margin-right: auto;
- margin-top: 150px;
+
 }
 
 
