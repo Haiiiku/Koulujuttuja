@@ -29,6 +29,15 @@ header {
   clear: both;
 }
 
+h1#header_header {
+  color: white;
+  font-size: 54px;
+  display: block;
+  position: relative;
+  left: 5%;
+  top: 18px;
+}
+
 #form_section {
  display: block;
  /*border: 1px solid #000;*/
