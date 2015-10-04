@@ -24,10 +24,10 @@ function CreateNote(data) {
   description.innerText = data[1];
   noteDisplay.appendChild(title);
   noteDisplay.appendChild(description);
-  noteDisplay.style.background="gray";
+  /*  noteDisplay.style.background="gray";
   noteDisplay.style.color="white";
   noteDisplay.style.width = "50px;";
-  noteDisplay.style.height = "50px;";
+  noteDisplay.style.height = "50px;"; */
   document.getElementById("nc").insertBefore(noteDisplay, document.getElementById("nc").childNodes[0]);
   console.log("Tried to create div");
 }
