@@ -12,12 +12,17 @@
       <div id="form_section">
         <form id="submit_form">
           <input type="text" name="eka" id="title">
-          <input type="text" name="toka" id="expire">
+          <select name="toka" id="colortag">
+            <option value="gray">Gray</option>
+            <option value="blue">Blue</option>
+            <option value="white">White</option>
+            <option value="red">Red</option>
+          </select>
           <input type="text" name="main_text" id="desc">
           <input type="button" onClick="Submit()" value="Submit">
         </form>
       </div>
-      
+
       <ul id="nc"></ul>
     </div>
   </body>
