@@ -30,10 +30,12 @@ function CreateNote(data) {
   description.innerText = data[1];
   noteDisplay.appendChild(title);
   noteDisplay.appendChild(description);
-  console.log("Tried to create div");
+
   noteDisplay.style.background = data[2];
   noteDisplay.style.opacity = 1;
+
   FadeIn(noteDisplay);
+  
   //Listauksien "poisto" toiminto
   noteDisplay.addEventListener("click", function(event){
     if (noteDisplay.style.opacity >= 1) {
